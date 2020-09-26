@@ -1,0 +1,44 @@
+:root {
+  --theme-background: #D0C8B0;
+  --line-color: #D0B8B0; /*B0B8D0;*/
+  --navbar-background-color: #3e3f3a;
+  --navbar-line-color: #fff;
+  --navbar-current-color: #B0B8D0;
+  --navbar-active-color: #B0B8D0;
+  --sidebar-background: #A6A08D;
+  --top-navbar-height: 55px;
+  --bottom-navbar-height: 48px;
+}
+/* Harp, greenish #C8D0B0 */
+/* Wafer, pinkish #D0B8B0 */
+
+html, body {
+  background: var(--theme-background);
+}
+
+.theme {
+  background: var(--theme-background)
+}
+
+.theme-navbar{
+  background: var(--navbar-background-color);
+}
+.theme-navbar a {
+  color: var(--navbar-line-color);
+}
+.theme-navbar .active a {
+  color: var(--navbar-current-color);
+}
+.theme-navbar .dropdown-menu {
+  background: var(--theme-background);
+}
+
+
+.theme-navbar a:hover {
+  color: var(--navbar-active-color);
+}
+
+.theme-sidebar {
+  background: var(--sidebar-background);
+  /*height: 100%;/*calc(100vh - var(--top-navbar-height) - var(--bottom-navbar-height));*/
+}
